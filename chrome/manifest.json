@@ -1,0 +1,12 @@
+{
+  "manifest_version": 2,
+
+	"name": "WikiVoyage 4 Ever!",
+	"description": "Never see wikitravel again",
+	"version": "1.0",
+	"content_scripts": [{
+		"matches": [ "*://wikitravel.org/*" ],
+		"js": [ "main.js" ],
+		"run_at": "document_start"
+	}]
+}
